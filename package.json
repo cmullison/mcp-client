@@ -1,0 +1,28 @@
+{
+	"name": "mcp-client",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"start": "vite dev",
+		"build": "vite build",
+		"deploy": "npx wrangler deploy --var HOST:$(./get-subdomain.sh)",
+		"type-check": "tsc --noEmit"
+	},
+	"keywords": [],
+	"author": "",
+	"dependencies": {
+		"@modelcontextprotocol/sdk": "^1.11.4",
+		"agents": "^0.0.90",
+		"nanoid": "^5.1.5",
+		"react": "^19.1.0",
+		"react-dom": "^19.1.0"
+	},
+	"devDependencies": {
+		"@cloudflare/vite-plugin": "^1.2.3",
+		"@cloudflare/workers-types": "^4.20250521.0",
+		"@types/react": "^19.1.5",
+		"@types/react-dom": "^19.1.5",
+		"@vitejs/plugin-react": "^4.4.1",
+		"vite": "^6.3.5"
+	}
+}
